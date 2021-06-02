@@ -1,0 +1,283 @@
+.ColorNav {
+    Color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 1.5rem;
+    background-color: none;
+}
+.formulario{
+    background-color: #99430a;
+}
+.busqueda{
+    position: relative;
+    left: 25%;
+}
+h1{
+    align-items: center;
+}
+.BotonBus{
+    border-color: teal;
+    color: white;
+    margin: 1rem;
+    font-weight: bold;
+    border-color: teal;
+    
+}
+.EncaComen{
+    align-items: center;
+    color: black;
+    text-align:center;
+    font-style:italic;
+    opacity: .9;
+    background-color: lavender;
+
+}
+.Menu2{
+    background-color: none;
+}
+.datos{
+    border: none;
+    font-weight: bold;
+    size: 3rem;
+    align-items: center;
+    justify-content: space-between;
+}
+.container-fluid {
+    position: relative;
+    height: 200px;
+    overflow: auto;
+
+   
+}
+.panelEmo{
+    align-items: center;
+    
+}
+.panelRango{
+    height: 20%;
+    width: 60%;
+}
+.Emogi{
+    height: 20%;
+    width: 20%;
+    animation: mov 3s linear infinite;
+    padding-bottom: 1.5rem;
+}
+.comen{
+    height: 20px;
+    width: 20px;
+    
+}
+.labelForm{
+ font-size:20px;
+ margin: 0.5em;
+ color:white;
+align-items: center;
+text-justify:distribute;
+}
+.Slider{
+    width: 30%;
+    height: 30%;
+}
+.ImagenBanner2{
+    width: 50%;
+    height: 50%;
+}
+.textForm{
+    font-size:20px;
+    margin: .5rem;   
+}
+.Des{
+    background-color: #B06204;
+    border:#B06204;
+    font-size:17px;
+}
+.Con-Re{
+  background:#B06204;
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  margin-bottom: 0;
+}
+figure img{
+    width: 100%;
+    background-repeat: no-repeat;
+}
+.LogoI{
+    width: 13rem;
+    height: 4.2rem;
+    padding-left: 1rem;
+    padding-bottom: .5rem;
+    padding-top: .5rem;
+}
+.Menu{
+    padding-top: .5rem;
+    color: white;
+    text-decoration: none;
+    display: block;
+    padding: .5rem 2rem;
+    transition: all 0.4s linear;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.uln{
+    padding: 0;
+    margin: 0;
+    list-style:none ;
+    color: aliceblue;
+}
+.FotosTrabajo{
+ width: 25%;
+ height: 30%;
+ border: #B06204;   
+}
+.Opciones {
+        padding: 0;
+        margin: 0;
+        list-style:none ;
+        color: black;
+        display: inline-block;
+        padding-top: .5rem;
+    display: block;
+    padding: .5rem 2rem;
+    transition: all 0.4s linear;
+    font-family:sans-serif;
+    font-size: 20px;
+}
+.uli{
+    display: inline-block;
+}
+
+.ColorNav ul li a:hover{
+    border-radius: 0px;
+    background: #99430a;
+    box-shadow: inset -8px -8px 16px #713207,
+                inset 8px 8px 16px #c1540d;
+text-decoration: none;
+list-style:none ;
+}
+
+.logo-nav-cont{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+.Menu-Icon{
+    display: none;
+
+}
+.Mai{
+    opacity: 100;
+    color: blanchedalmond;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.Ima{
+    width: 90%;
+    height: 90%;
+}
+.Con{
+    background-color: #B06204 ;
+    opacity: 0.9;
+    padding-left: 1rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    align-items: center;
+}
+.fot{
+    width: 100%;
+    background-color: chocolate;
+    color:cornsilk;
+    display: flex;
+    justify-content: space-between;
+
+}
+.funciona{
+    position: relative;
+    color:gainsboro;
+    align-items: center;
+    
+}
+.ImagenBanner{
+    animation: mov 3s linear infinite;
+}
+@keyframes mov {
+    0%{
+        transform: translateY(0);
+    }
+    50%{
+        transform: translateY(10px);
+
+    }
+    100% {
+        transform: translateY(0);
+    }
+    
+}
+@media only  screen and (max-width: 767px){
+   
+    .h1{
+        position:relative;
+        display:block;
+        margin:10px;
+        float:left;
+    }
+    .busqueda{
+        padding-top: 5rem;
+       position: absolute;
+       display: block;
+       flex-wrap: wrap;
+       padding-bottom: 4Rem;
+       
+    }
+    .ColorNav ul li {
+        display: block;
+    }
+    .ColorNav {
+       width: 100%; 
+    }
+    .Menu-Icon{
+        
+        color: white;
+        display: block;
+        padding: .5rem 2rem;
+        width: 2.5rem;
+        height: 1rem;
+        
+       
+    }
+    .uln{
+        display: none;
+    }
+    .uln.show{
+        display: block;
+        background-color: chocolate;
+    }
+    .Ima{
+        width: 100%;
+        height:100%;
+    }
+    .labelForm{
+        font-size:30px;
+        margin: 0rem;
+       }
+       .textForm{
+        margin: 0rem;   
+    }
+    .labelForm{
+        font-size:12px;
+        margin: 0.5em;
+        color:white;
+       align-items: center;
+       text-justify:distribute;
+       }
+
+}
