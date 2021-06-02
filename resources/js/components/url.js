@@ -1,1 +1,1 @@
-const url='ja-las/public';
+const url='http://localhost/ja-las/public';
