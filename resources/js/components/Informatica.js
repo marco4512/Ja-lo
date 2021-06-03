@@ -60,7 +60,7 @@ const Informatica =()=> {
      
     }).map(dataItem =>(
     <tr>
-        <td key={dataItem.id}>{
+        <td key={dataItem.id} className="ImagenTabla">{
             <Carousel>
                 <Carousel.Item >
                        <img key={dataItem.Foto1} 
@@ -91,13 +91,13 @@ const Informatica =()=> {
         <th>Telefono</th>    
         <td key={dataItem.telefono}>{dataItem.telefono}</td>
         </tr>
-        <tr>
+        <tr className="datos">
         <th>Ubicación</th>    
         <td key={dataItem.Estado}>{dataItem.Estado+' '+dataItem.Municipio}</td>
         <th>Colonia</th>    
         <td key={dataItem.Colonia}>{dataItem.Colonia}</td>
         </tr>
-        <tr>
+        <tr className="datos">
         <th>Descripción</th>    
         <td key={dataItem.Descripcion}>{dataItem.Descripcion}</td>
         <th>email</th>    

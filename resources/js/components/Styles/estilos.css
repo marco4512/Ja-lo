@@ -42,7 +42,7 @@ h1{
     size: 3rem;
     align-items: center;
     justify-content: space-between;
-    
+
 }
 .container-fluid {
     position: relative;
@@ -229,8 +229,16 @@ list-style:none ;
 }
 @media only  screen and (max-width: 767px){
     .ImagenBanner2{
-        width: 50vw;
-        height: 50vh;
+        width: 100vw;
+        height: 100vh;
+    }
+    .ImagenTabla{
+        width: 100vw;
+        height: 100vh;
+    }
+    .datos{
+        position:relative;
+        display:block;
     }
     .h1{
         position:relative;
