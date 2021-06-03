@@ -47,7 +47,7 @@ menuBtn.click(function() {
 </body>
 <footer>
  <div class="fot">
-  @2021 Todos los Derechos Reservados| Marco Martinez Martinez
+  @2021 Todos los Derechos Reservados| Marco Martinez Martine
  </div>
 </footer>
 </html>
