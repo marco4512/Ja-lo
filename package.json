@@ -9,7 +9,6 @@
         "prod": "npm run production",
         "production": "mix --production"
     },
-    "homepage": "http://rigby.atwebpages.com/",
     "devDependencies": {
         "@babel/preset-react": "^7.0.0",
         "axios": "^0.21.1",
