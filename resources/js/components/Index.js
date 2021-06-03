@@ -37,7 +37,7 @@ const Example =()=> {
             <span className="Menu-Icon"><img  src="https://ja-lo.herokuapp.com/images/menu_white_24dp.svg" ></img></span> 
                 <Nav className="mr-auto uln">
                 <Nav.Link as ={Link} to="/Registro" className="uln uli Menu"> Registrate</Nav.Link>
-                <Nav.Link href="#features" className="uln uli Menu">
+                <Nav.Link href="" className="uln uli Menu">
                         <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic" className="Des" >
                             Servicios

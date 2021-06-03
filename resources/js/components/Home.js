@@ -16,10 +16,13 @@ const Home =()=> {
          <div className="Con">
                 <section className="Mai">
                    <Caro></Caro>
-                   <br></br>
-                   <img src="https://ja-lo.herokuapp.com/images/ComoFun.png" className="Ima"></img>
                 </section>
             </div>
+          <div className="Con">
+          <section className="Mai">
+           <img src="https://ja-lo.herokuapp.com/images/ComoFun.png" className="Ima"></img>
+            </section>
+        </div>
         </div>
     );
 }
