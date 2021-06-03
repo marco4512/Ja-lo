@@ -36,65 +36,65 @@ const Example =()=> {
             <Navbar.Brand as ={Link} to="/Home"><img className="LogoI" src="https://ja-lo.herokuapp.com/images/Logo3.png" ></img></Navbar.Brand>
             <span className="Menu-Icon"><img  src="https://ja-lo.herokuapp.com/images/menu_white_24dp.svg" ></img></span> 
                 <Nav className="mr-auto uln">
-                <Nav.Link as ={Link} to="/ja-las/public/Registro" className="uln uli Menu"> Registrat</Nav.Link>
+                <Nav.Link as ={Link} to="/Registro" className="uln uli Menu"> Registrat</Nav.Link>
                 <Nav.Link href="#features" className="uln uli Menu">
                         <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic" className="Des" >
                             Servicios
                         </Dropdown.Toggle>
                         <Dropdown.Menu>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Carpinteria" className="Opciones">Carpinteria</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Mecanica" className="Opciones">Mecanica</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Computacion" className="Opciones">Computacion</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Comida" className="Opciones">Comida</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Construccion" className="Opciones">Construccion</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/DiseñoWeb" className="Opciones">DiseñoWeb</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Electronica" className="Opciones">Electronica</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Fontaneria" className="Opciones">Fontaneria</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Informatica" className="Opciones">Informatica</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Limpieza" className="Opciones">Limpieza</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Peluqueria" className="Opciones">Peluqueria</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Publicidad" className="Opciones">Publicidad</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Sastreria" className="Opciones">Sastreria</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Soldadura" className="Opciones">Soldadura</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Sonido" className="Opciones">Sonido</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Traduccion" className="Opciones">Traduccion</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Transporte" className="Opciones">Transporte</Dropdown.Item>
-                            <Dropdown.Item as ={Link} to="/ja-las/public/Tutorias" className="Opciones">Tutorias</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Carpinteria" className="Opciones">Carpinteria</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Mecanica" className="Opciones">Mecanica</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Computacion" className="Opciones">Computacion</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Comida" className="Opciones">Comida</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Construccion" className="Opciones">Construccion</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/DiseñoWeb" className="Opciones">DiseñoWeb</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Electronica" className="Opciones">Electronica</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Fontaneria" className="Opciones">Fontaneria</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Informatica" className="Opciones">Informatica</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Limpieza" className="Opciones">Limpieza</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Peluqueria" className="Opciones">Peluqueria</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Publicidad" className="Opciones">Publicidad</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Sastreria" className="Opciones">Sastreria</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Soldadura" className="Opciones">Soldadura</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Sonido" className="Opciones">Sonido</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Traduccion" className="Opciones">Traduccion</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Transporte" className="Opciones">Transporte</Dropdown.Item>
+                            <Dropdown.Item as ={Link} to="/Tutorias" className="Opciones">Tutorias</Dropdown.Item>
                             
                         </Dropdown.Menu>
                         </Dropdown>
                 </Nav.Link>
-                <Nav.Link as ={Link} to="/ja-las/public/InicioSe" className="uln uli Menu" > Iniciar Sesion  </Nav.Link>
+                <Nav.Link as ={Link} to="/InicioSe" className="uln uli Menu" > Iniciar Sesion  </Nav.Link>
                 
                 </Nav>
                 <Form inline>
             </Form>
             </Navbar>
             <Switch> 
-            <Route exact path='/ja-las/public/Registro' component= {Registro} /> 
+            <Route exact path='/Registro' component= {Registro} /> 
             <Route exact path='/Home' component= {Home} /> 
-            <Route exact path='/ja-las/public/Index' component= {Home} /> 
-            <Route exact path='' component= {Home} /> 
-            <Route exact path='/ja-las/public/Carpinteria' component= {Carpinteria} /> 
-            <Route exact path='/ja-las/public/Mecanica' component= {Mecanica} /> 
-            <Route exact path='/ja-las/public/Computacion' component= {Computacion} />
-            <Route exact path='/ja-las/public/InicioSe' component= {InicioSe} />  
-            <Route exact path='/ja-las/public/Comida' component= {Comida} />
-            <Route exact path='/ja-las/public/Construccion' component= {Construccion} />
-            <Route exact path='/ja-las/public/DiseñoWeb' component= {DiseñoWeb} />
-            <Route exact path='/ja-las/public/Electronica' component= {Electronica} />
-            <Route exact path='/ja-las/public/Fontaneria' component= {Fontaneria} />
-            <Route exact path='/ja-las/public/Informatica' component= {Informatica} />
-            <Route exact path='/ja-las/public/Limpieza' component= {Limpieza} />
-            <Route exact path='/ja-las/public/Peluqueria' component= {Peluqueria} />
-            <Route exact path='/ja-las/public/Publicidad' component= {Publicidad} />
-            <Route exact path='/ja-las/public/Sastreria' component= {Sastreria} />
-            <Route exact path='/ja-las/public/Soldadura' component= {Soldadura} />
-            <Route exact path='/ja-las/public/Sonido' component= {Sonido} />
-            <Route exact path='/ja-las/public/Traduccion' component= {Traduccion} />
-            <Route exact path='/ja-las/public/Transporte' component= {Transporte} />
-            <Route exact path='/ja-las/public/Tutorias' component= {Tutorias} />
+            <Route exact path='/Index' component= {Home} /> 
+            <Route exact path='/' component= {Home} /> 
+            <Route exact path='/Carpinteria' component= {Carpinteria} /> 
+            <Route exact path='/Mecanica' component= {Mecanica} /> 
+            <Route exact path='/Computacion' component= {Computacion} />
+            <Route exact path='/InicioSe' component= {InicioSe} />  
+            <Route exact path='/Comida' component= {Comida} />
+            <Route exact path='/Construccion' component= {Construccion} />
+            <Route exact path='/DiseñoWeb' component= {DiseñoWeb} />
+            <Route exact path='/Electronica' component= {Electronica} />
+            <Route exact path='/Fontaneria' component= {Fontaneria} />
+            <Route exact path='/Informatica' component= {Informatica} />
+            <Route exact path='/Limpieza' component= {Limpieza} />
+            <Route exact path='/Peluqueria' component= {Peluqueria} />
+            <Route exact path='/Publicidad' component= {Publicidad} />
+            <Route exact path='/Sastreria' component= {Sastreria} />
+            <Route exact path='/Soldadura' component= {Soldadura} />
+            <Route exact path='/Sonido' component= {Sonido} />
+            <Route exact path='/Traduccion' component= {Traduccion} />
+            <Route exact path='/Transporte' component= {Transporte} />
+            <Route exact path='/Tutorias' component= {Tutorias} />
             
             </Switch>
             </BrowserRouter>
