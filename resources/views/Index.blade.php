@@ -7,6 +7,7 @@
   <title>JA-LO</title>
     <!-- Styles -->
     <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+    <link rel="icon" type="image/ico" href="https://ja-lo.herokuapp.com/images/g13506.ico" />
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"> </script>
     <link
       rel="stylesheet"
