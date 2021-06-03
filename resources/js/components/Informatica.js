@@ -53,31 +53,7 @@ const Informatica =()=> {
      
     }).map(dataItem =>(
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top">{
-            <Carousel>
-                <Carousel.Item >
-                       <img key={dataItem.Foto1} 
-                       className="d-block w-100 ImagenBanner2"
-                       src={dataItem.Foto1}
-                       alt=""
-                       />
-                </Carousel.Item>
-                <Carousel.Item>
-                       <img key={dataItem.Foto2}
-                       className="d-block w-100 ImagenBanner2"
-                       src={dataItem.Foto2}
-                       alt=""
-                       />
-                </Carousel.Item>
-                <Carousel.Item>
-                       <img key={dataItem.Foto3}
-                       className="d-block w-100 ImagenBanner2"
-                       src={dataItem.Foto3}
-                       alt=""
-                       />
-                </Carousel.Item>
-            </Carousel>}
-            </Card.Img>
+        <Card.Img variant="top" src={dataItem.foto1}></Card.Img>
         <Card.Body>
         <Card.Title key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
         <Card.Text key={dataItem.Estado} >
