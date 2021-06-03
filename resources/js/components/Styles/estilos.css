@@ -42,6 +42,7 @@ h1{
     size: 3rem;
     align-items: center;
     justify-content: space-between;
+    
 }
 .container-fluid {
     position: relative;
@@ -227,7 +228,10 @@ list-style:none ;
     
 }
 @media only  screen and (max-width: 767px){
-   
+    .ImagenBanner2{
+        width: 50vw;
+        height: 50vh;
+    }
     .h1{
         position:relative;
         display:block;

@@ -10,7 +10,7 @@ const Car =()=> {
                 <img
                 className="d-block w-100 ImagenBanner"
                 src="https://ja-lo.herokuapp.com/images/Computomas4.png   "
-                alt=""
+                alt="/Computacion"
                 />
                 <Carousel.Caption>
                 <h3></h3>
@@ -21,7 +21,7 @@ const Car =()=> {
                 <img
                 className="d-block w-100 ImagenBanner"
                 src="https://ja-lo.herokuapp.com/images/Elect2.png"
-                alt=""
+                alt="/Electronica"
                 />
 
                 <Carousel.Caption>
@@ -33,7 +33,7 @@ const Car =()=> {
                 <img
                className="d-block w-100 ImagenBanner"
                src="https://ja-lo.herokuapp.com/images/Carpinteria2.png"
-               alt=""
+               alt="/Carpinteria"
                 />
                 <Carousel.Caption>
                 <h3></h3>
