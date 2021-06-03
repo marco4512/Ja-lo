@@ -16,7 +16,7 @@
       crossorigin="anonymous"
     />
 </head>
-<body   style="background: url(https://ja-lo.herokuapp.com/images/123.png) center top;">
+<body   style="background: url(https://ja-lo.herokuapp.com/images/g78420.png) center top;">
      <!-- React root DOM -->
      <div id="example"> </div>
      
