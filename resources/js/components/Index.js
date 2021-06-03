@@ -75,7 +75,7 @@ const Example =()=> {
             <Route exact path='/ja-las/public/Registro' component= {Registro} /> 
             <Route exact path='/Home' component= {Home} /> 
             <Route exact path='/ja-las/public/Index' component= {Home} /> 
-            <Route exact path='/ja-las/public/' component= {Home} /> 
+            <Route exact path='' component= {Home} /> 
             <Route exact path='/ja-las/public/Carpinteria' component= {Carpinteria} /> 
             <Route exact path='/ja-las/public/Mecanica' component= {Mecanica} /> 
             <Route exact path='/ja-las/public/Computacion' component= {Computacion} />
