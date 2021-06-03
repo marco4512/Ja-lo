@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateComTra extends Migration
+class CreateComentariosTrabajadores extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,11 @@ class CreateComTra extends Migration
      */
     public function up()
     {
-        Schema::create('com_tra1', function (Blueprint $table) {
+        Schema::create('comentarios_trabajadores', function (Blueprint $table) {
             $table->id();
-            $table->integer('Trabajador_id');
+            $table->integer('Comentario_id');
             $table->string('Comentario');
+            $table->date('Dia');
             $table->integer('Calificacion');  
             $table->timestamps();
         });
@@ -29,6 +30,6 @@ class CreateComTra extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('com_tra1');
+        Schema::dropIfExists('comentarios_trabajadores');
     }
 }

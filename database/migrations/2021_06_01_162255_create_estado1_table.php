@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateClasificacionTable extends Migration
+class CreateEstadoTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateClasificacionTable extends Migration
      */
     public function up()
     {
-        Schema::create('-Clasificacion1', function (Blueprint $table) {
+        Schema::create('-Estado', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
         });

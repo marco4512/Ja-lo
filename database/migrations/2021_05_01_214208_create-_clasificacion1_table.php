@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateColoniaTable extends Migration
+class CreateClasificacionTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,10 +13,9 @@ class CreateColoniaTable extends Migration
      */
     public function up()
     {
-        Schema::create('-Colonia1', function (Blueprint $table) {
+        Schema::create('-Clasificacion', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');    
-        
+            $table->string('nombre');
         });
     }
 

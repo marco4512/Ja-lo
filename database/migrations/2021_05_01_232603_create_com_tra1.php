@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateMunicipioTable extends Migration
+class CreateComTra extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,14 @@ class CreateMunicipioTable extends Migration
      */
     public function up()
     {
-        Schema::create('-Municipio1', function (Blueprint $table) {
+        Schema::create('com_tra', function (Blueprint $table) {
             $table->id();
-            $table->string('nombre');    
-        
+            $table->integer('Trabajador_id');
+            $table->string('Comentario');
+            $table->integer('Calificacion');  
+            $table->timestamps();
         });
-        }
+    }
 
     /**
      * Reverse the migrations.
@@ -27,6 +29,6 @@ class CreateMunicipioTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::dropIfExists('com_tra');
     }
 }

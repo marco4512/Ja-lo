@@ -13,7 +13,7 @@ class CreateEstadosMunicipiosTable extends Migration
      */
     public function up()
     {
-        Schema::create('_estados__municipios1', function (Blueprint $table) {
+        Schema::create('_estados__municipios', function (Blueprint $table) {
             $table->increments('id');
             $table->integer('Estados_id');
             $table->integer('Municipio_id');
@@ -28,6 +28,6 @@ class CreateEstadosMunicipiosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('_estados__municipios1');
+        Schema::dropIfExists('_estados__municipios');
     }
 }

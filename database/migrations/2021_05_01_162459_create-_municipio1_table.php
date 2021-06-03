@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateColoniaMunicipiosTable extends Migration
+class CreateMunicipioTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,12 @@ class CreateColoniaMunicipiosTable extends Migration
      */
     public function up()
     {
-        Schema::create('colonia_municipios1', function (Blueprint $table) {
+        Schema::create('-Municipio', function (Blueprint $table) {
             $table->id();
-            $table->string('Colonia_id');
-            $table->integer('Municipio_id');  
+            $table->string('nombre');    
+        
         });
-    }
+        }
 
     /**
      * Reverse the migrations.
@@ -27,6 +27,6 @@ class CreateColoniaMunicipiosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('colonia_municipios1');
+        //
     }
 }
