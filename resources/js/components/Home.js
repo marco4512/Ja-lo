@@ -20,7 +20,7 @@ const Home =()=> {
             </div>
           <div className="Con">
           <section className="Mai">
-           <img src="../public/images/ComoFun.png" className="Ima"></img>
+           <img src="https://ja-lo.herokuapp.com/images/ComoFun.png" className="Ima"></img>
             </section>
         </div>
         </div>

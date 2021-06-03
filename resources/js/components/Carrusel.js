@@ -9,7 +9,7 @@ const Car =()=> {
             <Carousel.Item>
                 <img
                 className="d-block w-100 ImagenBanner"
-                src="../public/images/Computomas4.png   "
+                src="https://ja-lo.herokuapp.com/images/Computomas4.png   "
                 alt=""
                 />
                 <Carousel.Caption>
@@ -20,7 +20,7 @@ const Car =()=> {
             <Carousel.Item>
                 <img
                 className="d-block w-100 ImagenBanner"
-                src="../public/images/Elect2.png"
+                src="https://ja-lo.herokuapp.com/images/Elect2.png"
                 alt=""
                 />
 
@@ -32,7 +32,7 @@ const Car =()=> {
             <Carousel.Item>
                 <img
                className="d-block w-100 ImagenBanner"
-               src="../public/images/Carpinteria2.png"
+               src="https://ja-lo.herokuapp.com/images/Carpinteria2.png"
                alt=""
                 />
                 <Carousel.Caption>
@@ -43,7 +43,7 @@ const Car =()=> {
               <Carousel.Item>
                 <img
                className="d-block w-100 ImagenBanner"
-               src="../public/images/Mecanica.png"
+               src="https://ja-lo.herokuapp.com/images/Mecanica.png"
                alt=""
                 />
                 <Carousel.Caption>
