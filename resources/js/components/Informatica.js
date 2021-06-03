@@ -60,7 +60,7 @@ const Informatica =()=> {
      
     }).map(dataItem =>(
     <tr>
-        <td key={dataItem.id} className="ImagenTabla">{
+        <td md='8' key={dataItem.id} className="ImagenTabla">{
             <Carousel>
                 <Carousel.Item >
                        <img key={dataItem.Foto1} 
