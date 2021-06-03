@@ -33,7 +33,7 @@ const Example =()=> {
         <div>
            <BrowserRouter>
            <Navbar bg="none" variant="none" className="ColorNav logo-nav-cont">
-            <Navbar.Brand as ={Link} to="/ja-las/public/Home"><img className="LogoI" src="Logo3.png" ></img></Navbar.Brand>
+            <Navbar.Brand as ={Link} to="/ja-las/public/Home"><img className="LogoI" src="https://ja-lo.herokuapp.com/public/imagesLogo3.png" ></img></Navbar.Brand>
             <span className="Menu-Icon"><img  src="https://ja-lo.herokuapp.com/images/menu_white_24dp.svg" ></img></span> 
                 <Nav className="mr-auto uln">
                 <Nav.Link as ={Link} to="/ja-las/public/Registro" className="uln uli Menu"> Registrarse</Nav.Link>
@@ -75,6 +75,7 @@ const Example =()=> {
             <Route exact path='/ja-las/public/Registro' component= {Registro} /> 
             <Route exact path='/ja-las/public/Home' component= {Home} /> 
             <Route exact path='/ja-las/public/Index' component= {Home} /> 
+            <Route exact path='/ja-las/public/' component= {Home} /> 
             <Route exact path='/ja-las/public/Carpinteria' component= {Carpinteria} /> 
             <Route exact path='/ja-las/public/Mecanica' component= {Mecanica} /> 
             <Route exact path='/ja-las/public/Computacion' component= {Computacion} />
