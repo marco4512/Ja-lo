@@ -182,8 +182,12 @@ list-style:none ;
     height: 90%;
 }
 .Con{
-    background-color: #B06204 ;
-    opacity: 0.9;
+    background: rgba( 222, 94, 31, 0.50 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 0.0px );
+    -webkit-backdrop-filter: blur( 0.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding-left: 1rem;
     padding-top: 1rem;
     padding-right: 1rem;
