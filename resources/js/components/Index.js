@@ -7,7 +7,7 @@ import Form from 'react-bootstrap/Form';
 import Dropdown from 'react-bootstrap/Dropdown';
 import { Route,Switch,Link, NavLink,BrowserRouter} from 'react-router-dom';
 import Registro from './Registro';
-import Home from './Home';
+import Home from 'https://ja-lo.herokuapp.com/Home';
 import Carpinteria from './Carpinteria';
 import Mecanica from './Mecanica';
 import Computacion from './Computacion';
