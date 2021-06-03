@@ -13,7 +13,7 @@ class CreateColoniaTable extends Migration
      */
     public function up()
     {
-        Schema::create('-Colonia', function (Blueprint $table) {
+        Schema::create('-Colonia1', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');    
         

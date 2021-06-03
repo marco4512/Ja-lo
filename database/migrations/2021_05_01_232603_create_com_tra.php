@@ -13,7 +13,7 @@ class CreateComTra extends Migration
      */
     public function up()
     {
-        Schema::create('com_tra', function (Blueprint $table) {
+        Schema::create('com_tra1', function (Blueprint $table) {
             $table->id();
             $table->integer('Trabajador_id');
             $table->string('Comentario');
@@ -29,6 +29,6 @@ class CreateComTra extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('com_tra');
+        Schema::dropIfExists('com_tra1');
     }
 }

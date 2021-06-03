@@ -13,7 +13,7 @@ class CreateComentariosTrabajadores extends Migration
      */
     public function up()
     {
-        Schema::create('comentarios_trabajadores', function (Blueprint $table) {
+        Schema::create('comentarios_trabajadores1', function (Blueprint $table) {
             $table->id();
             $table->integer('Comentario_id');
             $table->string('Comentario');
@@ -30,6 +30,6 @@ class CreateComentariosTrabajadores extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comentarios_trabajadores');
+        Schema::dropIfExists('comentarios_trabajadores1');
     }
 }

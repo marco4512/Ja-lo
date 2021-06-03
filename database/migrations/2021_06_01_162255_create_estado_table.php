@@ -13,7 +13,7 @@ class CreateEstadoTable extends Migration
      */
     public function up()
     {
-        Schema::create('-Estado', function (Blueprint $table) {
+        Schema::create('-Estado1', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
         });

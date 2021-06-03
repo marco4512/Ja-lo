@@ -13,7 +13,7 @@ class CreateClasificacionTable extends Migration
      */
     public function up()
     {
-        Schema::create('-Clasificacion', function (Blueprint $table) {
+        Schema::create('-Clasificacion1', function (Blueprint $table) {
             $table->id();
             $table->string('nombre');
         });
