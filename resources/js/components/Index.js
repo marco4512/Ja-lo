@@ -33,10 +33,10 @@ const Example =()=> {
         <div>
            <BrowserRouter>
            <Navbar bg="none" variant="none" className="ColorNav logo-nav-cont">
-            <Navbar.Brand as ={Link} to="/Home"><img className="LogoI" src="https://ja-lo.herokuapp.com/imagesLogo3.png" ></img></Navbar.Brand>
+            <Navbar.Brand as ={Link} to="/Home"><img className="LogoI" src="https://ja-lo.herokuapp.com/images/Logo3.png" ></img></Navbar.Brand>
             <span className="Menu-Icon"><img  src="https://ja-lo.herokuapp.com/images/menu_white_24dp.svg" ></img></span> 
                 <Nav className="mr-auto uln">
-                <Nav.Link as ={Link} to="/ja-las/public/Registro" className="uln uli Menu"> Registrars</Nav.Link>
+                <Nav.Link as ={Link} to="/ja-las/public/Registro" className="uln uli Menu"> Registra</Nav.Link>
                 <Nav.Link href="#features" className="uln uli Menu">
                         <Dropdown>
                         <Dropdown.Toggle variant="success" id="dropdown-basic" className="Des" >
