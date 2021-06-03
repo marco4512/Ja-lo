@@ -13,7 +13,7 @@ const Traduccion =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorTradu'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorTradu'
             })
             .then(response => {
                 setListaImagenes(response.data);

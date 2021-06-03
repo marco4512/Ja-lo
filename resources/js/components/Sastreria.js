@@ -13,7 +13,7 @@ const Sastreria =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorSastre'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorSastre'
             })
             .then(response => {
                 setListaImagenes(response.data);

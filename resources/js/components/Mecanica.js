@@ -13,7 +13,7 @@ const Mecanica =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorMe'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorMe'
             })
             .then(response => {
                 setListaImagenes(response.data);

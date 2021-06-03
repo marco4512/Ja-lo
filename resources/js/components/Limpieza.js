@@ -13,7 +13,7 @@ const Limpieza =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorLimp'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorLimp'
             })
             .then(response => {
                 setListaImagenes(response.data);

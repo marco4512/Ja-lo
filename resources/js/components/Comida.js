@@ -16,7 +16,7 @@ const Comida =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorcomida'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorcomida'
             })
             .then(response => {
                 setListaImagenes(response.data);

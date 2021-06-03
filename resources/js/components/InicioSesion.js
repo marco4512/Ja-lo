@@ -44,7 +44,7 @@ const FiltroMuni = useMemo (() =>
        (async () => {
            const response = await Axios({
                              method: 'get',
-                             url: 'http://localhost/ja-las/public/login?email='+$('#email').val()+'&'+'password='+$('#password').val()
+                             url: 'https://ja-lo.herokuapp.com/login?email='+$('#email').val()+'&'+'password='+$('#password').val()
                            })
                            .then(response => {
                                setTrabajador(response.data);
@@ -68,7 +68,7 @@ const FiltroMuni = useMemo (() =>
 
                           await Axios({
                             method: 'post',
-                            url: 'http://localhost/ja-las/public/EditarTra',
+                            url: 'https://ja-lo.herokuapp.com/EditarTra',
                             data: formData,
                             config: { headers: {'Content-Type': 'multipart/form-data' }}
                           })
@@ -91,7 +91,7 @@ const FiltroMuni = useMemo (() =>
                             formData.append('id',Trabajador.map(dataItem =>(dataItem.id)))
                               await Axios({
                                 method: 'post',
-                                url: 'http://localhost/ja-las/public/UpdateTrabaja',
+                                url: 'https://ja-lo.herokuapp.com/UpdateTrabaja',
                                 data: formData,
                                 config: { headers: {'Content-Type': 'multipart/form-data' }}
                               })
@@ -119,7 +119,7 @@ const FiltroMuni = useMemo (() =>
     
                               await Axios({
                                 method: 'post',
-                                url: 'http://localhost/ja-las/public/UpdateImagen',
+                                url: 'https://ja-lo.herokuapp.com/UpdateImagen',
                                 data: formData,
                                 config: { headers: {'Content-Type': 'multipart/form-data' }}
                               })
@@ -148,7 +148,7 @@ const FiltroMuni = useMemo (() =>
                                 formData.append('Municipio',$('#idMunicipio').val())
                                   await Axios({
                                     method: 'post',
-                                    url: 'http://localhost/ja-las/public/UpdateUbicacion',
+                                    url: 'https://ja-lo.herokuapp.com/UpdateUbicacion',
                                     data: formData,
                                     config: { headers: {'Content-Type': 'multipart/form-data' }}
                                   })
@@ -174,7 +174,7 @@ const FiltroMuni = useMemo (() =>
 
                                       await Axios({
                                         method: 'post',
-                                        url: 'http://localhost/ja-las/public/UpdateTelefono',
+                                        url: 'https://ja-lo.herokuapp.com/UpdateTelefono',
                                         data: formData,
                                         config: { headers: {'Content-Type': 'multipart/form-data' }}
                                       })
@@ -200,7 +200,7 @@ const FiltroMuni = useMemo (() =>
     
                                           await Axios({
                                             method: 'post',
-                                            url: 'http://localhost/ja-las/public/UpdateDescrip',
+                                            url: 'https://ja-lo.herokuapp.com/UpdateDescrip',
                                             data: formData,
                                             config: { headers: {'Content-Type': 'multipart/form-data' }}
                                           })
@@ -226,7 +226,7 @@ const FiltroMuni = useMemo (() =>
         
                                               await Axios({
                                                 method: 'post',
-                                                url: 'http://localhost/ja-las/public/Updateemail',
+                                                url: 'https://ja-lo.herokuapp.com/Updateemail',
                                                 data: formData,
                                                 config: { headers: {'Content-Type': 'multipart/form-data' }}
                                               })
@@ -248,7 +248,7 @@ const FiltroMuni = useMemo (() =>
         const EstadosFill = async (e) =>{
                                 const response = await Axios({
                                   method: 'get',
-                                  url: 'http://localhost/ja-las/public/-estado'
+                                  url: 'https://ja-lo.herokuapp.com/-estado'
                                 
                                 })
                                 .then(response => {
@@ -260,7 +260,7 @@ const FiltroMuni = useMemo (() =>
                   (async () => {
                     const response = await Axios({
                         method: 'get',
-                        url: 'http://localhost/ja-las/public/Join?id='+$('#idEstado').val()
+                        url: 'https://ja-lo.herokuapp.com/Join?id='+$('#idEstado').val()
                       
                       })
                       .then(response => {
@@ -274,7 +274,7 @@ const FiltroMuni = useMemo (() =>
                     
                     const response = await Axios({
                         method: 'get',
-                        url: 'http://localhost/ja-las/public/JoinCol?id='+$('#idMunicipio').val()
+                        url: 'https://ja-lo.herokuapp.com/JoinCol?id='+$('#idMunicipio').val()
                       
                       })
                       .then(response => {
@@ -291,7 +291,7 @@ const Borrar = async (e) =>{
                     formData.append('id',Trabajador.map(dataItem =>(dataItem.id)))
                       await Axios({
                         method: 'post',
-                        url: 'http://localhost/ja-las/public/UpdateDelete',
+                        url: 'https://ja-lo.herokuapp.com/UpdateDelete',
                         data: formData,
                         config: { headers: {'Content-Type': 'multipart/form-data' }}
                       })

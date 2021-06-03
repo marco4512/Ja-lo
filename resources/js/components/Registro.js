@@ -64,7 +64,7 @@ const Registro = props => {
         formData.append('Comentarios',data.Comentarios)
           await Axios({
             method: 'post',
-            url: 'http://localhost/ja-las/public/NTrabajador',
+            url: 'https://ja-lo.herokuapp.com/NTrabajador',
             data: formData,
             config: { headers: {'Content-Type': 'multipart/form-data' }}
           })
@@ -110,7 +110,7 @@ const Registro = props => {
                 (async () => {
                   const response = await Axios({
                       method: 'get',
-                      url: 'http://localhost/ja-las/public/-estado'
+                      url: 'https://ja-lo.herokuapp.com/-estado'
                     
                     })
                     .then(response => {
@@ -123,7 +123,7 @@ const Registro = props => {
                   (async () => {
                     const response = await Axios({
                         method: 'get',
-                        url: 'http://localhost/ja-las/public/Join?id='+$('#idEstado').val()
+                        url: 'https://ja-lo.herokuapp.com/Join?id='+$('#idEstado').val()
                       
                       })
                       .then(response => {
@@ -136,7 +136,7 @@ const Registro = props => {
                   (async () => {
                     const response = await Axios({
                         method: 'get',
-                        url: 'http://localhost/ja-las/public/JoinCol?id='+$('#idMunicipio').val()
+                        url: 'https://ja-lo.herokuapp.com/JoinCol?id='+$('#idMunicipio').val()
                       
                       })
                       .then(response => {
@@ -151,7 +151,7 @@ const Registro = props => {
                 (async () => {
                   const response = await Axios({
                       method: 'get',
-                      url: 'http://localhost/ja-las/public/Servicios'
+                      url: 'https://ja-lo.herokuapp.com/Servicios'
                     
                     })
                     .then(response => {
@@ -161,7 +161,7 @@ const Registro = props => {
                 (async () => {
                   const response = await Axios({
                       method: 'get',
-                      url: 'http://localhost/ja-las/public/Clasifi'
+                      url: 'https://ja-lo.herokuapp.com/Clasifi'
                     
                     })
                     .then(response => {

@@ -13,7 +13,7 @@ const Sonido =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorSonido'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorSonido'
             })
             .then(response => {
                 setListaImagenes(response.data);

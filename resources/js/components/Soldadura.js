@@ -13,7 +13,7 @@ const Soldadura =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorSolda'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorSolda'
             })
             .then(response => {
                 setListaImagenes(response.data);

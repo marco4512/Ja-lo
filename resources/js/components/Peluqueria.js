@@ -13,7 +13,7 @@ const Peluqueria =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorPeluqe'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorPeluqe'
             })
             .then(response => {
                 setListaImagenes(response.data);

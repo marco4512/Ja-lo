@@ -13,7 +13,7 @@ const Informatica =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorInformatica'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorInformatica'
             })
             .then(response => {
                 setListaImagenes(response.data);

@@ -13,7 +13,7 @@ const Electronica =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorElectri'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorElectri'
             })
             .then(response => {
                 setListaImagenes(response.data);

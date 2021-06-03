@@ -13,7 +13,7 @@ const Tutorias =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorTutorias'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorTutorias'
             })
             .then(response => {
                 setListaImagenes(response.data);

@@ -16,7 +16,7 @@ const Construccion =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorconstr'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorconstr'
             })
             .then(response => {
                 setListaImagenes(response.data);

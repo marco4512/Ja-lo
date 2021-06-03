@@ -13,7 +13,7 @@ const DiseñoWeb =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorWEB'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorWEB'
             })
             .then(response => {
                 setListaImagenes(response.data);

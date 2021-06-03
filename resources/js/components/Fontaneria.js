@@ -13,7 +13,7 @@ const Fontaneria =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorFonta'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorFonta'
             })
             .then(response => {
                 setListaImagenes(response.data);

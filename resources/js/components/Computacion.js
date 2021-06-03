@@ -13,7 +13,7 @@ const Computacion =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorcomputo'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorcomputo'
             })
             .then(response => {
                 setListaImagenes(response.data);

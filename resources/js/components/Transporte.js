@@ -13,7 +13,7 @@ const Transporte =()=> {
         (async () => {
           const response = await Axios({
               method: 'get',
-              url: 'http://localhost/ja-las/public/AllTrabajadorTranspo'
+              url: 'https://ja-lo.herokuapp.com/AllTrabajadorTranspo'
             })
             .then(response => {
                 setListaImagenes(response.data);
