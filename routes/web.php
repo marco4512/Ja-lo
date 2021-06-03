@@ -28,6 +28,9 @@ Route::get('/example', function () {
 Route::get('/Index', function () {
     return view('Index');
 });
+Route::get('/', function () {
+    return view('Index');
+});
 Route::get('/InicioSe', function () {
     return view('Index');
 });
