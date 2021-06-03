@@ -1,2 +1,3 @@
 #Run Database Migrations
-php artisan migrate --force--env=production
+php artisan migrate --env=production
+Y
