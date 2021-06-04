@@ -56,6 +56,7 @@ const Informatica =()=> {
         <Card.Img variant="top" src={dataItem.Foto1}></Card.Img>
         <Card.Body>
         <Card.Title key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
+        <Card.Text>Ubicacion</Card.Text>
         <Card.Text key={dataItem.Estado} >
         {dataItem.Estado+' '+dataItem.Municipio+' '+dataItem.Colonia}
         </Card.Text>
