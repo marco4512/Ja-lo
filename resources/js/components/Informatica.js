@@ -46,7 +46,7 @@ const Informatica =()=> {
                 <Form.Label>Password</Form.Label>
                 <Form.Control id="password"  type="password" placeholder="Password" />
             </Form.Group>
-            <Button variant="primary" onClick={FiltroMuni}>
+            <Button variant="primary">
               Iniciar
             </Button>
             </Form>
