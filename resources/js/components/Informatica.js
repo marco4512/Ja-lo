@@ -35,11 +35,11 @@ const Informatica =()=> {
         console.log("Telefono:",x);                         
           await Axios({
             method: 'get',
-            url: 'https://ja-lo.herokuapp.com//TrabajadorCard?telefono='+x,
+            url: 'https://ja-lo.herokuapp.com/TrabajadorCard?telefono='+x,
           })
           .then(response=>{
             setTrabajador(response.data);
-            setShow(true);
+           
           })
           .catch(error => {
             
@@ -85,9 +85,15 @@ const Informatica =()=> {
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
-        <Button variant="primary" onClick={Tel(dataItem.telefono)}>Ver mas ...</Button>
+        <Button variant="primary" onClick={Tel(dataItem.telefono,dataItem.trabajador),handleShow}>Ver mas ...</Button>
         </Card.Body>
-        <Modal show={show} onHide={handleClose}>
+        </Card>
+         
+     ))
+      
+    }
+    {Trabajador.map(dataItem =>(
+      <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
           <Modal.Title>Datos de: {' '+dataItem.trabajador} </Modal.Title>
           </Modal.Header>
@@ -109,13 +115,8 @@ const Informatica =()=> {
           <Modal.Footer>
           </Modal.Footer>
         </Modal>
-        </Card>
-         
-     ))
-      
+    ))
     }
-       
-
     </div>
     );
 }
