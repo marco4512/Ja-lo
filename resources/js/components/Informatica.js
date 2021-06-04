@@ -9,7 +9,7 @@ import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 const Informatica =()=> {
-    const handleShow = () => {setShow(true); Tel(); } 
+    const handleShow = () => {} 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
 
@@ -42,6 +42,7 @@ const Informatica =()=> {
           })
           .then(response=>{
             setTrabajador(response.data);
+            setShow(true);
           })
           .catch(error => {
             
@@ -113,7 +114,7 @@ const Informatica =()=> {
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
-        <Button variant="primary" onClick={handleShow}>Ver mas ...</Button>
+        <Button variant="primary" onClick={Tel}>Ver mas ...</Button>
         </Card.Body>
         </Card>
      ))
