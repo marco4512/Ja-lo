@@ -31,15 +31,11 @@ const Informatica =()=> {
       const [Trabajador, setTrabajador] = useState([]);
 
       const Tel = async (e) =>{
-        console.log("Cargando Datos");                         
-        let formData = new FormData();
-        formData.append('telefono',$('#idTelefono').val())
-
+        console.log("Cargando Datos");
+        console.log("Telefono:",$('#idTelefono').val());                         
           await Axios({
-            method: 'post',
-            url: 'https://ja-lo.herokuapp.com/TrabajadorCard',
-            data: formData,
-            config: { headers: {'Content-Type': 'multipart/form-data' }}
+            method: 'get',
+            url: 'https://ja-lo.herokuapp.com//TrabajadorCard?telefono='+$('#idTelefono').val(),
           })
           .then(response=>{
             setTrabajador(response.data);
