@@ -33,18 +33,17 @@ const Informatica =()=> {
         <section className="Mai">
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-            <Modal.Title>Es bueno tenerte de Vuelta</Modal.Title>
+            <Modal.Title>Datos de </Modal.Title>
           </Modal.Header>
           <Modal.Body>
           <Form >
             <Form.Group >
-                <Form.Label>Email</Form.Label>
-                <Form.Control id="email" type="email" placeholder="Ingresa Tu correo" />
+                <Form.Label>Nombre:</Form.Label>
+                <Form.Label>Telefono:</Form.Label>
+                <Form.Label>Comentarios:</Form.Label>
             </Form.Group>
-
             <Form.Group >
-                <Form.Label>Password</Form.Label>
-                <Form.Control id="password"  type="password" placeholder="Password" />
+                <Form.Label>Ubicacion</Form.Label>
             </Form.Group>
             <Button variant="primary">
               Iniciar
@@ -80,6 +79,7 @@ const Informatica =()=> {
         
      
     }).map(dataItem =>(
+        
         <Card style={{ width: '18rem' }} className="VistaCard">
         <Card.Img variant="top" src={dataItem.Foto1}></Card.Img>
         <Card.Body>

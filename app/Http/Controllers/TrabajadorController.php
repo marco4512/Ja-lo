@@ -274,6 +274,18 @@ class TrabajadorController extends Controller
         ->get()->toJson();
         return $data;
      }
+     public function DatosTrabajaCard(Request $request){
+      $data = DB::table('trabajador')
+        ->join('-Municipio', '-Municipio.id', '=', 'trabajador.Municipio')
+        ->join('-Colonia', '-Colonia.id', '=', 'trabajador.idColonia')
+        ->join('Servicios', 'Servicios.id', '=', 'trabajador.idServicio')
+        ->join('-Estado', '-Estado.id', '=', 'trabajador.Estado')
+        ->select('trabajador.id as id','Servicios.id as  ServicioId','Servicios.nombre as Servicio','-Municipio.nombre as Municipio','-Estado.nombre as Estado','apellido','trabajador.nombre as trabajador','telefono','email','-Colonia.nombre as Colonia','Foto1','Foto2','Foto3','Descripcion')
+        ->where ('trabajador.telefono','=',$request-> telefono)
+        ->orderBy('trabajador.idClasificacion', 'desc')
+        ->get()->toJson();
+      return $data;
+   }
      
     /**
      * Store a newly created resource in storage.
