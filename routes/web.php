@@ -145,7 +145,7 @@ Route::get('/AllTrabajadorSonido',[TrabajadorController::class,'TrabajadorDatosS
 Route::get('/AllTrabajadorTradu',[TrabajadorController::class,'TrabajadorDatosTradu']);
 Route::get('/AllTrabajadorTranspo',[TrabajadorController::class,'TrabajadorDatosTranspo']);
 Route::get('/AllTrabajadorTutorias',[TrabajadorController::class,'TrabajadorDatosTutorias']);
-Route::get('/TrabajadorCard',[TrabajadorController::class,'DatosTrabajaCard']);
+Route::post('/TrabajadorCard',[TrabajadorController::class,'DatosTrabajaCard']);
 
 Route::get('/Comentario',[ComentariosController::class,'Index']);
 Route::get('/ComentarioNUevo',[ComentariosController::class,'store']);

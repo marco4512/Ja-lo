@@ -9,7 +9,7 @@ import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 const Informatica =()=> {
-    const handleShow = () => {setShow(true); } 
+    const handleShow = () => {setShow(true); Tel(); } 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
 
@@ -28,15 +28,38 @@ const Informatica =()=> {
             
         })();
       }, []);
+      const [Trabajador, setTrabajador] = useState([]);
+      const Tel = async (e) =>{
+                                 
+        let formData = new FormData();
+        formData.append('telefono',$('#idTelefono').val())
+
+          await Axios({
+            method: 'post',
+            url: 'https://ja-lo.herokuapp.com/TrabajadorCard',
+            data: formData,
+            config: { headers: {'Content-Type': 'multipart/form-data' }}
+          })
+          .then(response=>{
+            setTrabajador(response.data);
+          })
+          .catch(error => {
+            
+            console.log('Error Login', error )
+            alert('Error Datos Incompletos',);
+          }
+          )
+           }
     return (
     <div className="Con">
         <section className="Mai">
-        <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-            <Modal.Title>Datos de </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-          <Form >
+        {Trabajador.map(dataItem2 =>(
+            <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Datos de: {' '+dataItem2.trabajador} </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <Form >
             <Form.Group >
                 <Form.Label>Nombre:</Form.Label>
                 <Form.Label>Telefono:</Form.Label>
@@ -46,13 +69,16 @@ const Informatica =()=> {
                 <Form.Label>Ubicacion</Form.Label>
             </Form.Group>
             <Button variant="primary">
-              Iniciar
+                Iniciar
             </Button>
             </Form>
-          </Modal.Body>
-          <Modal.Footer>
-          </Modal.Footer>
-        </Modal>
+            </Modal.Body>
+            <Modal.Footer>
+            </Modal.Footer>
+          </Modal>
+         ))}
+
+       
         <h1>Informatica</h1>
         <Form inline className="busqueda">
          <Form.Group as ={Col}>
@@ -86,6 +112,7 @@ const Informatica =()=> {
         <Card.Title className="colorCard" key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
+        <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
         <Button variant="primary" onClick={handleShow}>Ver mas ...</Button>
         </Card.Body>
         </Card>
