@@ -9,7 +9,7 @@ import Table from 'react-bootstrap/Table';
 import Card from 'react-bootstrap/Card';
 import Modal from 'react-bootstrap/Modal';
 const Informatica =()=> {
-    const handleShow = () => {} 
+    const handleShow = () => {setShow(true);} 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
    
@@ -85,36 +85,36 @@ const Informatica =()=> {
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
-        <Button variant="primary" onClick={Tel(dataItem.telefono)}>Ver mas ...</Button>
+        <Button variant="primary" onClick={handleShow}>Ver mas ...</Button>
         </Card.Body>
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+          <Modal.Title>Datos de: {' '+dataItem1.trabajador} </Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+          <Form >
+          <Form.Group >
+              <Form.Label>Nombre:</Form.Label>
+              <Form.Label>Telefono:</Form.Label>
+              <Form.Label>Comentarios:</Form.Label>
+          </Form.Group>
+          <Form.Group >
+              <Form.Label>Ubicacion</Form.Label>
+          </Form.Group>
+          <Button variant="primary">
+              Iniciar
+          </Button>
+          </Form>
+          </Modal.Body>
+          <Modal.Footer>
+          </Modal.Footer>
+        </Modal>
         </Card>
+         
      ))
       
     }
-       {Trabajador.map(dataItem2 =>(
-            <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-            <Modal.Title>Datos de: {' '+dataItem2.trabajador} </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <Form >
-            <Form.Group >
-                <Form.Label>Nombre:</Form.Label>
-                <Form.Label>Telefono:</Form.Label>
-                <Form.Label>Comentarios:</Form.Label>
-            </Form.Group>
-            <Form.Group >
-                <Form.Label>Ubicacion</Form.Label>
-            </Form.Group>
-            <Button variant="primary">
-                Iniciar
-            </Button>
-            </Form>
-            </Modal.Body>
-            <Modal.Footer>
-            </Modal.Footer>
-          </Modal>
-         ))}
+       
 
     </div>
     );
