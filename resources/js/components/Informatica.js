@@ -12,7 +12,7 @@ const Informatica =()=> {
     const handleShow = () => {} 
     const [show, setShow] = useState(false);
     const handleClose = () => setShow(false);
-
+   
     const [ListaImagenes, setListaImagenes] = useState([]);
     const[term,setTerm]=useState("");
     useEffect(() => {
@@ -32,7 +32,7 @@ const Informatica =()=> {
 
       const Tel = async (e) =>{
         console.log("Cargando Datos");
-        console.log("Telefono:",$('#idTelefono').val());                         
+        console.log("Telefono:",e);                         
           await Axios({
             method: 'get',
             url: 'https://ja-lo.herokuapp.com//TrabajadorCard?telefono='+$('#idTelefono').val(),
@@ -85,10 +85,11 @@ const Informatica =()=> {
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
-        <Button variant="primary" onClick={Tel}>Ver mas ...</Button>
+        <Button variant="primary" onClick={Tel(dataItem.telefono)}>Ver mas ...</Button>
         </Card.Body>
         </Card>
      ))
+      
     }
        {Trabajador.map(dataItem2 =>(
             <Modal show={show} onHide={handleClose}>
