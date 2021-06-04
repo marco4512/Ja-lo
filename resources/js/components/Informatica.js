@@ -55,9 +55,9 @@ const Informatica =()=> {
         <Card style={{ width: '18rem' }} className="VistaCard">
         <Card.Img variant="top" src={dataItem.Foto1}></Card.Img>
         <Card.Body>
-        <Card.Title key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
-        <Card.Text key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
-        <Card.Text key={dataItem.Colonia}>Colonia: {+' '+dataItem.Colonia} </Card.Text>
+        <Card.Title className="colorCard" key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
+        <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
+        <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Button variant="primary">Ver mas ...</Button>
         </Card.Body>
         </Card>
