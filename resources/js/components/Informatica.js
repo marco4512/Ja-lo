@@ -29,8 +29,9 @@ const Informatica =()=> {
         })();
       }, []);
       const [Trabajador, setTrabajador] = useState([]);
+
       const Tel = async (e) =>{
-                                 
+        console.log("Cargando Datos");                         
         let formData = new FormData();
         formData.append('telefono',$('#idTelefono').val())
 
@@ -54,32 +55,6 @@ const Informatica =()=> {
     return (
     <div className="Con">
         <section className="Mai">
-        {Trabajador.map(dataItem2 =>(
-            <Modal show={show} onHide={handleClose}>
-            <Modal.Header closeButton>
-            <Modal.Title>Datos de: {' '+dataItem2.trabajador} </Modal.Title>
-            </Modal.Header>
-            <Modal.Body>
-            <Form >
-            <Form.Group >
-                <Form.Label>Nombre:</Form.Label>
-                <Form.Label>Telefono:</Form.Label>
-                <Form.Label>Comentarios:</Form.Label>
-            </Form.Group>
-            <Form.Group >
-                <Form.Label>Ubicacion</Form.Label>
-            </Form.Group>
-            <Button variant="primary">
-                Iniciar
-            </Button>
-            </Form>
-            </Modal.Body>
-            <Modal.Footer>
-            </Modal.Footer>
-          </Modal>
-         ))}
-
-       
         <h1>Informatica</h1>
         <Form inline className="busqueda">
          <Form.Group as ={Col}>
@@ -119,6 +94,30 @@ const Informatica =()=> {
         </Card>
      ))
     }
+       {Trabajador.map(dataItem2 =>(
+            <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+            <Modal.Title>Datos de: {' '+dataItem2.trabajador} </Modal.Title>
+            </Modal.Header>
+            <Modal.Body>
+            <Form >
+            <Form.Group >
+                <Form.Label>Nombre:</Form.Label>
+                <Form.Label>Telefono:</Form.Label>
+                <Form.Label>Comentarios:</Form.Label>
+            </Form.Group>
+            <Form.Group >
+                <Form.Label>Ubicacion</Form.Label>
+            </Form.Group>
+            <Button variant="primary">
+                Iniciar
+            </Button>
+            </Form>
+            </Modal.Body>
+            <Modal.Footer>
+            </Modal.Footer>
+          </Modal>
+         ))}
 
     </div>
     );
