@@ -6,8 +6,13 @@ import Col from 'react-bootstrap/Col';
 import FormControl from 'react-bootstrap/FormControl';
 import Axios from 'axios'
 import Table from 'react-bootstrap/Table';
-import Card from 'react-bootstrap/Card'
+import Card from 'react-bootstrap/Card';
+import Modal from 'react-bootstrap/Modal';
 const Informatica =()=> {
+    const handleShow = () => {setShow(true); } 
+    const [show, setShow] = useState(false);
+    const handleClose = () => setShow(false);
+
     const [ListaImagenes, setListaImagenes] = useState([]);
     const[term,setTerm]=useState("");
     useEffect(() => {
@@ -26,6 +31,29 @@ const Informatica =()=> {
     return (
     <div className="Con">
         <section className="Mai">
+        <Modal show={show} onHide={handleClose}>
+          <Modal.Header closeButton>
+            <Modal.Title>Es bueno tenerte de Vuelta</Modal.Title>
+          </Modal.Header>
+          <Modal.Body>
+          <Form >
+            <Form.Group >
+                <Form.Label>Email</Form.Label>
+                <Form.Control id="email" type="email" placeholder="Ingresa Tu correo" />
+            </Form.Group>
+
+            <Form.Group >
+                <Form.Label>Password</Form.Label>
+                <Form.Control id="password"  type="password" placeholder="Password" />
+            </Form.Group>
+            <Button variant="primary" onClick={FiltroMuni}>
+              Iniciar
+            </Button>
+            </Form>
+          </Modal.Body>
+          <Modal.Footer>
+          </Modal.Footer>
+        </Modal>
         <h1>Informatica</h1>
         <Form inline className="busqueda">
          <Form.Group as ={Col}>
@@ -58,7 +86,7 @@ const Informatica =()=> {
         <Card.Title className="colorCard" key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
-        <Button variant="primary">Ver mas ...</Button>
+        <Button variant="primary" onClick={handleShow}>Ver mas ...</Button>
         </Card.Body>
         </Card>
      ))
