@@ -30,12 +30,12 @@ const Informatica =()=> {
       }, []);
       const [Trabajador, setTrabajador] = useState([]);
 
-      const Tel = async (e) =>{
+      const Tel = async (x) =>{
         console.log("Cargando Datos");
-        console.log("Telefono:",e);                         
+        console.log("Telefono:",x);                         
           await Axios({
             method: 'get',
-            url: 'https://ja-lo.herokuapp.com//TrabajadorCard?telefono='+$('#idTelefono').val(),
+            url: 'https://ja-lo.herokuapp.com//TrabajadorCard?telefono='+x,
           })
           .then(response=>{
             setTrabajador(response.data);
