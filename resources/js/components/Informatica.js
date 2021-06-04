@@ -85,7 +85,7 @@ const Informatica =()=> {
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
-        <Button variant="primary" onClick={handleShow}>Ver mas ...</Button>
+        <Button variant="primary" onClick={Tel(dataItem.telefono)}>Ver mas ...</Button>
         </Card.Body>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
