@@ -53,11 +53,11 @@ const Informatica =()=> {
      
     }).map(dataItem =>(
         <Card style={{ width: '18rem' }}>
-        <Card.Img variant="top" src={dataItem.foto1}></Card.Img>
+        <Card.Img variant="top" src={dataItem.Foto1}></Card.Img>
         <Card.Body>
         <Card.Title key={dataItem.trabajador} >{dataItem.trabajador+' '+dataItem.apellido}</Card.Title>
         <Card.Text key={dataItem.Estado} >
-        {dataItem.Estado+' '+dataItem.Municipio+''+dataItem.Colonia}
+        {dataItem.Estado+' '+dataItem.Municipio+' '+dataItem.Colonia}
         </Card.Text>
         <Button variant="primary">Go somewhere</Button>
         </Card.Body>
