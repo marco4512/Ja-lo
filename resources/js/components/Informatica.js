@@ -89,7 +89,7 @@ const Informatica =()=> {
         </Card.Body>
         <Modal show={show} onHide={handleClose}>
           <Modal.Header closeButton>
-          <Modal.Title>Datos de: {' '+dataItem1.trabajador} </Modal.Title>
+          <Modal.Title>Datos de: {' '+dataItem.trabajador} </Modal.Title>
           </Modal.Header>
           <Modal.Body>
           <Form >
