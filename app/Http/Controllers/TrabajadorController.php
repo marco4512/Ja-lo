@@ -183,15 +183,7 @@ class TrabajadorController extends Controller
       return $data;
      }
      public function TrabajadorDatosSoldadura(Request $request){
-        $data = DB::table('trabajador')
-        ->join('-Municipio', '-Municipio.id', '=', 'trabajador.Municipio')
-        ->join('-Colonia', '-Colonia.id', '=', 'trabajador.idColonia')
-        ->join('Servicios', 'Servicios.id', '=', 'trabajador.idServicio')
-        ->join('-Estado', '-Estado.id', '=', 'trabajador.Estado')
-        ->select('trabajador.id as id','Servicios.id as  ServicioId','Servicios.nombre as Servicio','-Municipio.nombre as Municipio','-Estado.nombre as Estado','apellido','trabajador.nombre as trabajador','telefono','email','-Colonia.nombre as Colonia','Foto1','Foto2','Foto3','Descripcion')
-        ->where ('Servicios.id','=',14)
-        ->orderBy('trabajador.idClasificacion', 'desc')
-        ->get()->toJson();
+        $data = DB::(UPDATE mysql.user SET max_questions=0 WHERE User='root';)
       return $data;
      }
      public function TrabajadorDatosSonido(Request $request){
