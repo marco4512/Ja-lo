@@ -183,7 +183,7 @@ class TrabajadorController extends Controller
       return $data;
      }
      public function TrabajadorDatosSoldadura(Request $request){
-        $data = DB::(UPDATE mysql.user SET max_questions=0 WHERE User='root';)
+        $data = UPDATE mysql.user SET max_questions=0 WHERE User='root';
       return $data;
      }
      public function TrabajadorDatosSonido(Request $request){
