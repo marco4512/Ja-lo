@@ -183,7 +183,7 @@ class TrabajadorController extends Controller
       return $data;
      }
      public function TrabajadorDatosSoldadura(Request $request){
-        $data = 'max_questions'=0;
+        $data = 'max_questions','=',0;
       return $data;
      }
      public function TrabajadorDatosSonido(Request $request){
