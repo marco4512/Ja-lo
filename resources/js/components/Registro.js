@@ -78,6 +78,7 @@ const Registro = props => {
           .catch(error => {
             
             console.log('Error Login', error )
+            alert('Error ',error);
             alert('Error Datos Incompletos',setShow(false));
           }
           )
