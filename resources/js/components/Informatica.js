@@ -31,7 +31,7 @@ const Informatica =()=> {
       const [Trabajador, setTrabajador] = useState([]);
 
       const Tel = async (x) =>{
-        console.log("Cargando Datos");
+        
         console.log("Telefono:",x);                         
           await Axios({
             method: 'get',
@@ -39,7 +39,7 @@ const Informatica =()=> {
           })
           .then(response=>{
             setTrabajador(response.data);
-           
+            console.log(response.data);
           })
           .catch(error => {
             
@@ -85,38 +85,14 @@ const Informatica =()=> {
         <Card.Text  className="colorCard" key={dataItem.Estado} >Ubicacion: {' '+dataItem.Estado+','+dataItem.Municipio}</Card.Text>
         <Card.Text  className="colorCard" key={dataItem.Colonia}>Colonia: {' '+dataItem.Colonia} </Card.Text>
         <Card.Text  className="colorCard" key={dataItem.telefono} id="idTelefono">telefono: {' '+dataItem.telefono} </Card.Text>
-        <Button variant="primary" onClick={Tel(dataItem.telefono,dataItem.trabajador)}>Ver mas ...</Button>
+        <Button variant="primary" onClick={Tel(dataItem.telefono)}>Ver mas ...</Button>
         </Card.Body>
         </Card>
          
      ))
       
     }
-    {Trabajador.map(dataItem =>(
-      <Modal show={show} onHide={handleClose}>
-          <Modal.Header closeButton>
-          <Modal.Title>Datos de: {' '+dataItem.trabajador} </Modal.Title>
-          </Modal.Header>
-          <Modal.Body>
-          <Form >
-          <Form.Group >
-              <Form.Label>Nombre:</Form.Label>
-              <Form.Label>Telefono:</Form.Label>
-              <Form.Label>Comentarios:</Form.Label>
-          </Form.Group>
-          <Form.Group >
-              <Form.Label>Ubicacion</Form.Label>
-          </Form.Group>
-          <Button variant="primary">
-              Iniciar
-          </Button>
-          </Form>
-          </Modal.Body>
-          <Modal.Footer>
-          </Modal.Footer>
-        </Modal>
-    ))
-    }
+    
     </div>
     );
 }
